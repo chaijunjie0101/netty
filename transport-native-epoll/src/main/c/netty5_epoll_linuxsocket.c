@@ -904,7 +904,7 @@ done:
 }
 
 void netty5_epoll_linuxsocket_JNI_OnUnLoad(JNIEnv* env, const char* packagePrefix) {
-    NETTY_JNI_UTIL_UNLOAD_CLASS_WEAK(env, peerCredentialsClass);
+    NETTY_JNI_UTIL_UNLOAD_CLASS_WEAK(env, peerCredentialsClassWeak);
 
     netty_jni_util_unregister_natives(env, packagePrefix, LINUXSOCKET_CLASSNAME);
 }
